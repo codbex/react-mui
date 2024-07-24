@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Sample</title>
+    <!-- Adding the Babel compiler for JSX support in the browser -->
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7/babel.min.js"></script>
+    <!-- Adding the React and ReactDOM libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <!-- Adding MUI Core -->
+    <script src="https://cdn.jsdelivr.net/npm/@mui/material@5/umd/material-ui.production.min.js" crossorigin></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mui/icons-material@5/utils/createSvgIcon.min.js" crossorigin></script>
+  </head>
+
+  <body>
+
+    <div id="root"></div>
+
+    <script type="text/babel" src='Autocomplete.jsx'></script> <!-- https://mui.com/material-ui/react-autocomplete/ -->
+    <script type="text/babel" src='Button.jsx'></script> <!-- https://mui.com/material-ui/react-button/ -->
+    <script type="text/babel" src='ButtonGroup.jsx'></script> <!-- https://mui.com/material-ui/react-button-group/ -->
+    <script type="text/babel" src='Checkbox.jsx'></script> <!-- https://mui.com/material-ui/react-checkbox/ -->
+    <!-- Not working due to: https://github.com/mui/material-ui/issues/20540 -->
+    <!-- <script type="text/babel" src='FloatingActionButton.jsx'></script> -->
+    <!-- https://mui.com/material-ui/react-floating-action-button/ -->
+    <script type="text/babel" src='RadioGroup.jsx'></script> <!-- https://mui.com/material-ui/react-radio-button/ -->
+    <script type="text/babel" src='Rating.jsx'></script> <!-- https://mui.com/material-ui/react-rating/ -->
+    <script type="text/babel" src='Select.jsx'></script> <!-- https://mui.com/material-ui/react-select/ -->
+    <script type="text/babel" src='Slider.jsx'></script> <!-- https://mui.com/material-ui/react-slider/ -->
+
+    <script type="text/babel">
+      const App = () => {
+          return (
+              <div>
+                  <ComboBox />
+                  <br/>
+                  <BasicButtons />
+                  <br/>
+                  <BasicButtonGroup />
+                  <br/>
+                  <Checkboxes />
+                  <br/>
+                  <RadioButtonsGroup />
+                  <br/>
+                  <BasicRating />
+                  <br/>
+                  <BasicSelect />
+                  <br/>
+                  <ContinuousSlider />
+              </div>
+          );
+      };
+
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+  </body>
+
+</html>
