@@ -1,6 +1,9 @@
 # React - MUI
 
 ## Components
+
+> _**Note:** Material UI Icons are not distributed as UMDs, hence, can't be used._
+
 ![components](components.png)
 
 ## Changes
