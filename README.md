@@ -53,12 +53,16 @@ Browse icons at: https://fonts.google.com/icons
 
 ```js
 <VolumeUp />
+<AddIcon />
+<EditIcon />
 ```
 
 ->
 
 ```js
 <span class="material-icons">volume_up</span>
+<span class="material-icons">add</span>
+<span class="material-icons">edit</span>
 ```
 
 ```js
