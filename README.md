@@ -13,7 +13,7 @@
 - [Slider](https://mui.com/material-ui/react-slider/)
 > _**Note:** Material UI Icons are not distributed as UMDs, hence, can't be used._
 
-![components](components.png)
+![components](components2.png)
 
 ## Changes
 
