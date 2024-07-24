@@ -3,42 +3,22 @@ const {
     Fab,
 } = MaterialUI;
 
-// const {
-//     AddIcon,
-//     EditIcon,
-//     FavoriteIcon,
-//     NavigationIcon
-// } = MaterialUIIcons
-
 function FloatingActionButtons() {
     return (
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
             <Fab color="primary" aria-label="add">
+                <span class="material-icons">add</span>
             </Fab>
             <Fab color="secondary" aria-label="edit">
+                <span class="material-icons">edit</span>
             </Fab>
             <Fab variant="extended">
+                <span class="material-icons">navigation</span>
                 Navigate
             </Fab>
             <Fab disabled aria-label="like">
+                <span class="material-icons">favorite</span>
             </Fab>
         </Box>
     );
-    // return (
-    //     <Box sx={{ '& > :not(style)': { m: 1 } }}>
-    //         <Fab color="primary" aria-label="add">
-    //             <AddIcon />
-    //         </Fab>
-    //         <Fab color="secondary" aria-label="edit">
-    //             <EditIcon />
-    //         </Fab>
-    //         <Fab variant="extended">
-    //             <NavigationIcon sx={{ mr: 1 }} />
-    //             Navigate
-    //         </Fab>
-    //         <Fab disabled aria-label="like">
-    //             <FavoriteIcon />
-    //         </Fab>
-    //     </Box>
-    // );
 }
