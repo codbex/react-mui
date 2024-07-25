@@ -1,4 +1,4 @@
-# React - MUI
+# React - Material UI
 
 ## Components
 
